@@ -1,0 +1,20 @@
+.products {
+    list-style-type: none;
+ }
+ 
+ .products li {
+    display:inline-block;
+    width: 255px;
+    text-align: center; 
+ }
+ .image{
+     width: 200px;
+     height: 200px;
+     margin: 10px;
+     
+
+ }
+ .image1{
+     width: 200px;
+     height: 200px;
+ }

@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    height: 120px;
+    background-image: linear-gradient(0,#f57650,rgb(235, 19, 19));
+    z-index: 2;
+}
+
+.header_navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header_navbar-item{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    margin: 4px 8px;
+    position: relative;
+}
+.header_navbar-item-qr:hover .header_qr{
+    display:block;
+}
+.header_navbar-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.header_navbar-item_bold{
+    font-weight: 300;
+}
+.header_navbar-item,
+.header_navbar-icon-link,
+.icon{
+    display:inline-flex;
+    align-items: center;
+}
+.header_navbar-item:hover,
+.header_navbar-item-link:hover {
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+
+}
+.header_navbar-item-link{
+    position: relative;
+}
+.icon{
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+.connect{
+    cursor: text;
+    color:white;
+}
+.header_navbar-icon-link:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+.header_qr{
+    width: 186px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+}
+.header_qr-img{
+    width: 100%;
+
+}
+.head_qr-apps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_qr-download-img{
+    height: 16px;
+}
+.notify{
+    width: 220px;
+    height: 300px;
+    background-color:wheat;
+    display: flex;
+    position: absolute;
+    display: none;
+    border-radius:5px;
+    right: 0px;
+    font-size: 1.2rem;
+}
+.notify-img{
+    width: 100px;
+    margin-left:55px;
+    margin-top: 20px;
+}
+.dangNhap{
+    margin-left: 25px;
+    color: black;
+
+}
+.header_navbar-item-link:hover .notify{
+    display: block;
+}
+.notify-footer{
+    color: black;
+    display: inline-block;
+    margin-top: 110px;
+    background-color: white;
+    margin-left:8px ;
+}
+.notify-footer:hover .notify-footer-hover1{
+    color: red;
+    background-color:wheat;
+}
+.notify-footer:hover .notify-footer-hover2{
+    color: blue;
+}
+/* header with search */
+.header-with-search{
+    height: 84px;
+    display: flex;
+    text
+}
+.header_logo{
+    width:200px;
+}
+.header_logo-image{
+    width: 150px;
+}

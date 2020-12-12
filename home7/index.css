@@ -7,12 +7,6 @@
     height: 120px;
     background-color: #ffaa00;
 }
-.content{
-    width: 100%;
-    height: 500px;
-    background-color: darkgray;
-    
-}
 .up{
     width: 80%;
     height: 70px;
@@ -58,7 +52,18 @@
 .search button img{
     width: 20px;
 }
-.item1{
-    width: auto;
-    height: auto;
+.content{
+    background-color:white;
+    width:1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px  ;
+    grid-template-rows: 150px 150px ;
+    grid-column-gap:100px ;
+    grid-row-gap: 50px;
+}
+.item img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
 }
