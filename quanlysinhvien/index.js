@@ -6,6 +6,8 @@ function validateEmail(email) {
    
 function save () {
     let fullname= document.getElementById('fullname').value;
+    let date= document.getElementById('date').value;
+    let trieuchung= document.getElementById('trieuchung').value;
     let email= document.getElementById('email').value;
     let phone= document.getElementById('phone').value;
     let address= document.getElementById('address').value;
@@ -54,12 +56,14 @@ function save () {
     }else{
         document.getElementById('gender-error').innerHTML='';
     }
-    if (fullname && phone && address && gender) {
+    if (fullname &&trieuchung && phone && address && gender ) {
         
     let patients =localStorage.getItem('patients') ?  JSON.parse(localStorage.getItem('patients')) : [] ;
       
         patients.push({
             fullname: fullname,
+            date :date,
+            trieuchung: trieuchung,
             email: email,
             phone: phone,
             address:address,
@@ -90,6 +94,12 @@ function renderListPatient() {
                     Họ tên
                 </td>
                 <td>
+                    Ngày Khám
+                </td>
+                <td>
+                    Triệu Chứng
+                </td>
+                <td>
                         Email
                 </td>
                 <td>
@@ -109,6 +119,12 @@ function renderListPatient() {
                 </td>
                 <td>
                     ${patient.fullname}
+                </td>
+                <td>
+                    ${patient.date}
+                </td>
+                <td>
+                    ${patient.trieuchung}
                 </td>
                 <td>
                     ${patient.email}
